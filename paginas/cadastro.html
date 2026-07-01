@@ -1,31 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJETO WEB - HTML/CSS</title>
 
-    
+    <link rel="stylesheet" href="../css/cadastro.css">
+
+
 </head>
+
 <body>
-
-    <div id="links">
-        <a href="../index.html">PÁGINA INICIAL</a> | <a href="texto.html">TEXTO</a> | <a
-            href="/outras_paginas/outro_texto.html">OUTRO TEXTO</a> | <a href="cadastro.html">CADASTRO</a> | <a
-            href="listas.html">LISTAS</a> | <a href="tabela.html">TABELAS</a> | <a href="imagens.html">IMAGENS</a> <br>
-        <br> <br>
-
-    </div>
 
     <div id="div-form">
 
         <h3>FORMULÁRIO HTML</h3>
 
-            
+        <form name="form-pessoa" id="form-pessoa" method="post" action="joao.a.guedes@aluno.senai.br">
+
+            <label for="nome">NOME</label> <br>
+            <input type="text" name="nome" id="nome" class="input-txt01" maxlength="20" required
+                placeholder="INFORME SEU NOME."> <br> <br> <br>
+
+            <label for="cpf">CPF</label> <br>
+            <input type="number" name="cpf" id="cpf" class="input-txt02" maxlength="14" required
+                placeholder="INFORME SEU CPF."> <br> <br> <br>
+
+            <label for="cpf">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" class="input-txt02" maxlength="14" required
+                pattern="^\d{3}\.\d{3}\.\d{3}\-\d{2}" placeholder="000.000.000-00."> <br> <br><br>
+
+            <label for="email">EMAIL</label> <br>
+            <input type="email" name="email" id="email" class="input-txt02" required placeholder="INFORME SEU EMAIL.">
+            <br><br><br><br>
+
+            <label for="forsexo">SEXO</label> <br> <br>
+            <input type="radio" name="sexo" id="sxF" class="input-radio" required value="F">FEMININO <br><br>
+            <input type="radio" name="sexo" id="sxM" class="input-radio" required value="M">MASCULINO <br><br>
+            <input type="radio" name="sexo" id="sxND" class="input-radio" required value="ND">NÃO DECLARAR
+            <br><br><br><br>
+
+            <select name="estado" id="estado" required>
+                <option>SELECIONE O ESTADO</option>
+                <option value="Al">ALAGOAS</option>
+                <option value="Ba">BAHIA</option>
+                <option value="Pe">PERNAMBUCO</option>
+                <option value="Pb">PARAÍBA</option>
+                <option value="RN">RIO GRANDE DO NORTE</option>
+                <option value="Ce">CEARÁ</option>
+                <option value="Pi">PIAUÍ</option>
+                <option value="Ma">MARANHÃO</option>
+                <option value="Se">SERGIPE</option>
+
+            </select> <br> <br><br><br>
+
+            <label for="preferencias">PREFERÊNCIAS</label> <br><br>
+            <input type="checkbox" name="estudo" id="estudo" value="estudo" required> ESTUDO <br><br>
+            <input type="checkbox" name="viagem" id="viagem" value="viagem" required> VIAGEM<br><br>
+            <input type="checkbox" name="trabalho" id="trabalho" value="trabalho" required> TRABALHO<br><br>
+            <input type="checkbox" name="compras" id="compras" value="compras" required> COMPRAS<br><br><br><br>
+
+            <label for="senha">SENHA</label> <br>
+            <input type="password" name="senha" id="senha" class="input-txt02" required placeholder="INFORME UMA SENHA."
+                maxlength="6"><br><br><br><br>
+
+            <label for="datanascimento">NASCIMENTO</label><br>
+            <input type="date" name="datanascimento" id="datanascimento" class="input-txt02" required><br><br><br><br>
+
+            <label for="quantidade">QUANTIDADE</label> <br><br>
+            <input type="range" name="quantidade" id="quantidade" class="input-txt02" min="0" max="10" step="2"
+                value="0" required> <br><br><br><br>
+        <div id="div-btns">
+            <button type="submit" id="bnt-Enviar" class="bnt">ENVIAR DADOS</button>
+            <button type="reset" id="bnt-Limpar" class="bnt">LIMPAR DADOS</button>
+            <button id="bnt" class="bnt">BOTÃO</button> <br><br><br><br><br><br><br><br>
+        </div><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+    
+    
+
+            <label for="comentario">COMENTÁRIO</label> <br> <br>
+            <textarea name="comentario" id="comentario" placeholder="DIGITE UM COMENTÁRIO"></textarea>
+            <br><br><br><br><br><br><br><br>
+
+        </form>
+
+        <footer>
+            <div id="links">
+                <a href="../index.html">PÁGINA INICIAL</a> | <a href="texto.html">TEXTO</a> | <a
+                    href="/outras_paginas/outro_texto.html">OUTRO TEXTO</a> | <a href="cadastro.html">CADASTRO</a> | <a
+                    href="listas.html">LISTAS</a> | <a href="tabela.html">TABELAS</a> | <a
+                    href="imagens.html">IMAGENS</a> <br>
+                <br> <br>
+
+            </div>
+
+        </footer>
 
 
 
     </div>
-    
+
 </body>
+
 </html>
